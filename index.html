@@ -10,40 +10,53 @@
 
 <body>
     <div class="bbody">
-            <div class="vilain_cara">
-                <div class="d-flex">
-                    <h4 class="me-5">charizard</h4>
-                    <p class="ms-5 mt-3">lvl 50</p>
-                </div>
-                <span>HP : </span>
-                <progress id="file" value="0"  max="0"> 32% </progress>
+        <div class="vilain_cara">
+            <div class="d-flex">
+                <h4 class="me-5">charizard</h4>
+                <p class="ms-5 mt-3">lvl 50</p>
             </div>
-            <div class="hero_cara">
-                <div class="d-flex">
-                    <h4 class="me-5">raicho</h4>
-                    <p class="ms-5 mt-3">lvl 100</p>
-                </div>
-                <span >HP : </span>
-                <progress id="file" value="0"  max="0"> 32% </progress>
+            <span>HP : </span>
+            <progress id="file" value="0" max="0"> 32% </progress>
+        </div>
+        <div class="hero_cara">
+            <div class="d-flex">
+                <h4 class="me-5">raicho</h4>
+                <p class="ms-5 mt-3">lvl 100</p>
             </div>
+            <span>HP : </span>
+            <progress id="file" value="0" max="0"> 32% </progress>
+        </div>
+        <img class="thunder d-none" width="200px" src="./public/img/thunder.gif" alt="thunder">
+        <img class="sparcle d-none" width="200px" src="./public/img/XZ5V.gif" alt="">
         <img class="vilain" height="400px" src="./public/img/3nRA.gif" alt="">
         <img class="hero" height="300px" src="./public/img/raichu.gif" alt="">
-
+        <img class="flame d-none" width="250px" src="./public/img/YQDj.gif" alt="">
     </div>
     <div id="div_attaque" class="attaque">
 
-    <div id="div-action" >
-<br>
+        <div id="div-action">
+            <br>
             <button class="btn btn-secondary w-25 me-5 ms-5">take down</button>
             <button class="btn btn-secondary w-25 me-5 ">thunder</button>
-            <br>
+            <br><br>
             <button class="btn btn-secondary w-25 ms-5">raklo</button>
-            <button class="btn btn-secondary w-25 m-5">khawro</button>
+            <button class="btn btn-secondary w-25 ms-5">khawro</button>
 
+        </div>
     </div>
-</div>
 
-
+    <audio id="audio">
+        <source src="./public/audio/background_music.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio_raichu">
+        <source src="./public/audio/raichu.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio_vilain">
+        <source src="./public/audio/alomomola.mp3" type="audio/mp3">
+    </audio>
+    <audio id="damaged">
+        <source src="./public/audio/damage_hits.mp3" type="audio/mp3">
+    </audio>
 
 
 

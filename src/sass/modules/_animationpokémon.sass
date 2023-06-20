@@ -5,18 +5,20 @@
     height: 75vh
     background-size: cover
 .attaque
+    border: 10px double black
     height: 25vh
     background-color: rgb(96, 207, 128)
 .vilain
     position: absolute
     left: 60%
     top: -15%
-    animation: vilain 5s
+    animation: vilain 2s
 
 .hero
     position: absolute
     left: 15%
     top: 30%
+    animation: hero 2s
 
 .vilain_cara
     width: 350px
@@ -27,24 +29,91 @@
     position: absolute
     top: 5%
     left: 10%
-    
-.hero_cara 
-  width: 350px
-  background-color: rgb(245, 244, 214)
-  height: 100px
-  border: 5px solid
-  border-radius: 20px 0px 20px 0px
-  position: absolute
-  top: 50%
-  left: 70%
+
+.hero_cara
+    width: 350px
+    background-color: rgb(245, 244, 214)
+    height: 100px
+    border: 5px solid
+    border-radius: 20px 0px 20px 0px
+    position: absolute
+    top: 50%
+    left: 70%
 .text-dammage
+    margin-left: 40px   
     font-size: 40px
     font-family: 'Times New Roman', Times, serif
 
 @keyframes vilain
     0%
-        left: 60%
+        left: 73%
     100%
-        left:  20%
+        left: 60%
+@keyframes hero
+    0%
+        left: 0%
+    100%
+        left: 15%
+
+.vilain-key
+    animation: damaged_vilain 0.5s 
+
+@keyframes damaged_vilain
+    0%
+        left: 65% 
+        opacity: 0.5
+    25%
+        left: 55%
+        opacity: 1
+
+    50%    
+        left: 65%
+        opacity: 0.5
+
+    75%
+        left: 55%
+        opacity: 1
+
+    100% 
+        left: 60%   
+        opacity: 0.5
+
+.thunder
+    z-index: 1
+    position: absolute
+    left: 65%
+    top: -15%
+
+.sparcle
+    z-index: 1
+    position: absolute
+    left: 65%
+    top: -15%
+
+.flame
+    position: absolute
+    left: 15%
+    top: 36%
         
-        
+.hero-key
+    animation: hero-key 0.5s
+
+@keyframes hero-key
+    0%
+        left: 20% 
+        opacity: 0.5
+    25%
+        left: 10%
+        opacity: 1
+
+    50%    
+        left: 20%
+        opacity: 0.5
+
+    75%
+        left: 10%
+        opacity: 1
+
+    100% 
+        left: 15%   
+        opacity: 0.5
