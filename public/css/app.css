@@ -11875,6 +11875,7 @@ textarea.form-control-lg {
   position: absolute;
   left: 60%;
   top: -15%;
+  animation: vilain 5s;
 }
 
 .hero {
@@ -11903,6 +11904,20 @@ textarea.form-control-lg {
   position: absolute;
   top: 50%;
   left: 70%;
+}
+
+.text-dammage {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@keyframes vilain {
+  0% {
+    left: 60%;
+  }
+  100% {
+    left: 20%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
